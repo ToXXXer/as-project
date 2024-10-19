@@ -1,0 +1,42 @@
+CREATE TABLE brand(
+	brand_name varchar(32) PRIMARY KEY
+);
+
+CREATE TABLE adress(
+	adress_id SERIAL PRIMARY KEY,
+	country VARCHAR(32) NOT NULL,
+	town VARCHAR(32) NOT NULL,
+	CONSTRAINT unique_adress UNIQUE (country, town)
+);
+
+CREATE TABLE person(
+	surname VARCHAR(32) PRIMARY KEY,
+	email VARCHAR(32) UNIQUE NOT NULL,
+	phone VARCHAR(32) UNIQUE DEFAULT 'None',
+	user_password VARCHAR(32) NOT NULL,
+	privilege VARCHAR(16) CHECK (privilege = 'admin' OR privilege = 'user') DEFAULT 'user',
+	first_name VARCHAR(32) DEFAULT 'None',
+	last_name VARCHAR(32) DEFAULT 'None',
+	adress_id INT REFERENCES adress(adress_id) NOT NULL,
+	picture VARCHAR(124) DEFAULT 'default',
+	user_info TEXT DEFAULT 'None'
+);
+
+CREATE TABLE car(
+	vin VARCHAR(32) PRIMARY KEY,
+	brand VARCHAR(32) REFERENCES brand(brand_name) NOT NULL,
+	model VARCHAR(32) NOT NULL,
+	price BIGINT NOT NULL,
+	mileage BIGINT NOT NULL,
+	date_model INT CHECK(date_model BETWEEN 1900 AND EXTRACT(YEAR FROM CURRENT_DATE)) NOT NULL,
+	surname VARCHAR(32) REFERENCES person(surname) NOT NULL,
+	type_of_engine VARCHAR(32) CHECK (type_of_engine IN('Бензин', 'Дизель', 'Гибрид', 'Электрокар')) NOT NULL,
+	picture VARCHAR(124) NOT NULL,
+	car_info TEXT NOT NULL
+);
+
+CREATE TABLE favourite(
+	surname VARCHAR(32) REFERENCES person(surname),
+	vin VARCHAR(32) REFERENCES car(vin),
+	CONSTRAINT favourite_user_id_car_pk PRIMARY KEY (surname, vin)
+);

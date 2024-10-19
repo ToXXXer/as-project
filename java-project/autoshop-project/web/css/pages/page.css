@@ -1,0 +1,16 @@
+body {
+    background-color: #051622;
+}
+section.page {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+
+@media (max-width: 1000px) {
+    section.page {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+    }
+}

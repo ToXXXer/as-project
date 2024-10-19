@@ -1,0 +1,32 @@
+/* Перестановка картинок */
+.image .hover-car-card {
+    display: none;
+}
+
+.image:hover .car-card {
+    display: none
+}
+
+.image:hover .hover-car-card {
+    display: block
+}
+
+/* Размер картинок */
+
+img.car-card {
+    width: 100%;
+    border-radius: 10%;
+    margin-bottom: 5%;
+}
+
+img.hover-car-card {
+    width: 100%;
+    border-radius: 10%;
+    margin-bottom: 5%;
+}
+
+/* Комментарий */
+
+div.info-text .comment {
+    margin-bottom: 10%;
+}

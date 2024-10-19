@@ -1,0 +1,60 @@
+* {
+    background-color: #051622;
+}
+
+section {
+    margin-top: 5%;
+}
+
+div.main {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    width: 90%;
+    text-align: center;
+}
+
+a.log, .reg {
+    font-size: calc((100vw - 480px)/(1280 - 480) * (64 - 26) + 26px);
+    font-style: oblique;
+    font-weight: bold;
+    color: #deb992;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    border-radius: 5%;
+}
+
+a.log {
+    background-color: #1ba098;
+}
+
+a.reg {
+    background-color: #1e6464;
+}
+
+div.drop {
+    font-size: calc((100vw - 480px)/(1280 - 480) * (32 - 16) + 16px);
+}
+
+section {
+    margin-left: 10%;
+    margin-right: 50%;
+    font-size: calc((100vw - 480px)/(1280 - 480) * (48 - 24) + 24px);
+    font-weight: bold;
+    color: #deb992;
+}
+
+input {
+    color: #deb992;
+    font-size: calc((100vw - 480px)/(1280 - 480) * (48 - 16) + 16px);
+}
+
+button {
+    color: #deb992;
+    font-size: calc((100vw - 480px)/(1280 - 480) * (48 - 16) + 16px);
+}

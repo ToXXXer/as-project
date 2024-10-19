@@ -1,0 +1,19 @@
+/* Размер картинок */
+
+img.profile-card {
+    width: 100%;
+    border-radius: 10%;
+    margin-bottom: 5%;
+}
+
+/* Комментарий */
+
+div.info-text .comment {
+    margin-bottom: 10%;
+    max-width: 100%;
+}
+
+a>button {
+    background-color: #051622;
+    color: #1ba098;
+}

@@ -1,0 +1,39 @@
+div.name, .price{
+    font-size: calc((100vw - 480px)/(1280 - 480) * (64 - 48) + 48px);
+    font-style: oblique;
+    font-weight: bold;
+    color: #deb992;
+    display: inline-block;
+}
+
+div.main {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: start;
+}
+
+label {
+    font-size: calc((100vw - 480px)/(1280 - 480) * (40 - 20) + 20px);
+    font-style: normal;
+    font-weight: bold;
+    color: #deb992;
+
+}
+
+label.car {
+    font-size: calc((100vw - 480px)/(1280 - 480) * (32 - 16) + 16px);
+    font-style: italic;
+    font-weight: bold;
+}
+
+div.card {
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+div.info-text {
+    margin-top: 0.5%;
+    color: #1ba098;
+}

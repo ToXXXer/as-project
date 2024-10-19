@@ -1,0 +1,76 @@
+* {
+    font-size: calc((100vw - 480px)/(1280 - 480) * (32 - 24) + 24px);
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    display: flex;
+    flex-direction: row;
+}
+
+span {
+    padding-left: 5%;
+    margin-top: 1%;
+}
+
+label {
+    width: 100%;
+}
+
+div.left-bar .bar {
+    color: #deb992;
+    font-size: calc((100vw - 480px)/(1280 - 480) * (24 - 12) + 12px);
+    margin: 0;
+}
+
+input.price {
+    color: #deb992;
+    background-color: #051622;
+    width: 50%;
+}
+
+button.find {
+    color: #deb992;
+    background-color: #1ba098;
+    width: 50%;
+}
+
+input.choose {
+    color: #deb992;
+    background-color: #051622;
+}
+
+select {
+    background-color: #051622;
+    color:#deb992;
+}
+
+label.first-name {
+    font-size: calc((100vw - 480px)/(1280 - 480) * (32 - 32) + 32px);
+    font-style: oblique;
+    width: 100%;
+    margin-top: 1.5%;
+}
+
+
+@media (max-width: 3000px) {
+    input.choose {
+        transform: scale(3);
+    }
+}
+
+@media (max-width: 2000px) {
+    input.choose {
+        transform: scale(2);
+    }
+}
+
+@media (max-width: 1000px) {
+    input.choose {
+        transform: scale(1);
+        span {
+            padding-left: 0%;
+        }
+    }
+}

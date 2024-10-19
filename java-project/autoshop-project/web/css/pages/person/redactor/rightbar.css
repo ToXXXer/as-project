@@ -1,0 +1,47 @@
+/* Размер картинок */
+
+img.profile-card {
+    width: 100%;
+    border-radius: 10%;
+    margin-bottom: 5%;
+}
+
+/* Комментарий */
+
+* {
+    background-color: #051622;
+}
+
+input.info-text .comment {
+    margin-bottom: 10%;
+    color: #1ba098;
+}
+
+input.info-text {
+    margin-bottom: 10%;
+    color: #1ba098;
+}
+
+a>button {
+    background-color: #051622;
+    color: #1ba098;
+}
+
+input.info-text {
+    color: #deb992;
+}
+
+div>div.card {
+    margin: 0%;
+}
+
+form>div.card {
+    margin: 0%;
+}
+
+textarea.info-text-profile {
+    text-overflow: ellipsis;
+    color: #deb992;
+    height: 12em;
+    width: 16em;
+}

@@ -1,0 +1,30 @@
+INSERT INTO brand(brand_name) VALUES
+('BMW'),
+('Mercedes'),
+('AUDI'),
+('Porsche'),
+('Bentley'),
+('Jaguar');
+
+INSERT INTO adress(town, country) VALUES
+('Россия', 'Москва'),
+('Россия', 'Санкт-Петербург'),
+('Россия', 'Нижний Новгород'),
+('Россия', 'Краснодар');
+
+INSERT INTO person(surname, email, privilege, user_password, adress_id) VALUES
+('bxrbasov', 'bxrbasov@gmail.com', 'admin', 'admin', 1)
+
+INSERT INTO car VALUES
+('1D4GP24R57B255713', 'BMW', 'M3', 5999000, 10000, 2021, 'bxrbasov', 'Бензин', '1D4GP24R57B255713-1', 'Good!'),
+('SAJWA0ES6DPS56028', 'Mercedes', 'Benz C-Class AMG Line', 2999000, 20000, 2018, 'bxrbasov', 'Бензин','SAJWA0ES6DPS56028-1' , 'Good!'),
+('JH4DA9360MS000737', 'AUDI', 'RS7', 9999000, 5000, 2022, 'bxrbasov', 'Бензин', 'JH4DA9360MS000737-1', 'Good!'),
+('YV1MS382262161511', 'Porsche', '781 Cayman', 11999000, 10000, 2018, 'bxrbasov', 'Бензин', 'YV1MS382262161511-1', 'Good!'),
+('5XYKTDA60CG246250', 'Bentley', 'Continental GT', 8999000, 15000, 2015, 'bxrbasov', 'Дизель', '5XYKTDA60CG246250-1', 'Good!'),
+('KL5JD56Z85K139936', 'Jaguar', 'F-Type', 1499000, 50000, 2018, 'bxrbasov', 'Дизель', 'KL5JD56Z85K139936-1', 'Good!'),
+('1GTEK14K5NZ533840', 'BMW', 'X7', 8999000, 30000, 2021, 'bxrbasov', 'Дизель', '1GTEK14K5NZ533840-1', 'Good!'),
+('1HD1BX510BB027648', 'Mercedes', 'Benz GLS 450', 19999000, 10000, 2021, 'bxrbasov', 'Дизель', '1HD1BX510BB027648-1', 'Good!'),
+('1FMEU7DE5AUA72472', 'AUDI', 'A8', 6999000, 250000, 2022, 'bxrbasov', 'Гибрид', '1FMEU7DE5AUA72472-1', 'Good!'),
+('1HD1KHM16DB613457', 'Porsche', 'Panamera Turbo', 24999000, 3000, 2024, 'bxrbasov', 'Гибрид', '1HD1KHM16DB613457-1', 'Good!'),
+('4T1BB3EK3AU115504', 'Bentley', 'Bentayga', 19999000, 20000, 2022, 'bxrbasov', 'Электрокар', '4T1BB3EK3AU115504-1', 'Good!'),
+('SMT905JN26J262542', 'Jaguar', 'f-Pace', 3999000, 40000, 2023, 'bxrbasov', 'Электрокар', 'SMT905JN26J262542-1', 'Good!');
